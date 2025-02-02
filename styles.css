@@ -1,0 +1,129 @@
+/* ทำให้รูปใหญ่ขึ้น */
+.player-img {
+    width: 300px;
+    height: 240px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* ปรับแต่งสไตล์ของ Hero */
+.fav-hero {
+    background-color: #6c757d;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+/* ปรับแต่งการ์ดนักแข่ง */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: space-between;
+}
+
+.player-card {
+    background-color: #f8f9fa;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 10px;
+    padding: 100px;
+    width: 100%;
+    max-width: 80%; /* ขนาดสูงสุดของการ์ด */
+    margin: 10px auto;
+}
+
+.player-card:hover {
+    transform: scale(1.2);
+}
+
+/* Hero item */
+.hero-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 100px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Responsive: ปรับขนาดตามหน้าจอ */
+@media (max-width: 768px) {
+    .player-card {
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .player-card {
+        max-width: 100%;
+    }
+}
+
+.player-info {
+    margin-left: 0; /* ให้ข้อความชิดซ้าย */
+    padding-left: 0; /* ปรับให้ติดขอบการ์ดมากขึ้น */
+}
+
+.fav-heroes {
+    display: flex; /* ทำให้เรียงเป็นแนวนอน */
+    gap: 10px; /* เพิ่มระยะห่างระหว่างแต่ละตัว */
+}
+
+.hero-item {
+    position: relative;
+    width: 120px;  /* กำหนดขนาดให้เท่ากัน */
+    height: 80px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 3px 6px;
+    border-radius: 3px;
+}
