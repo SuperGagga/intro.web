@@ -1,10 +1,13 @@
 /* ทำให้รูปใหญ่ขึ้น */
 .player-img {
-    width: 300px;
-    height: 240px;
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 4 / 3; /* หรืออัตราส่วนที่เหมาะสม */
     border-radius: 15px;
     object-fit: cover;
 }
+
+
 
 /* ปรับแต่งสไตล์ของ Hero */
 .fav-hero {
